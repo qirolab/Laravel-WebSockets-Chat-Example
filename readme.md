@@ -3,7 +3,7 @@
 This is a Chat system example application built with the [Laravel WebSockets](https://github.com/beyondcode/laravel-websockets) package, [VueJs](https://vuejs.org/) and [Laravel-Echo](https://laravel.com/docs/5.7/broadcasting#installing-laravel-echo).
 
 ## Tutorial
-[![Real-time Chat system](http://i3.ytimg.com/vi/H_4UubWE9NQ/hqdefault.jpg)](https://www.youtube.com/watch?v=H_4UubWE9NQ&list=PL1TrjkMQ8UbWfFUCimQ50CdrR_J7QvEFW)
+[![Real-time Chat system]
 
 ## Usage
 
