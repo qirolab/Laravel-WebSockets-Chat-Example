@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMessagesTable extends Migration
+class AddReadToMessages extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('messages', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('from')->unsigned();
-            $table->integer('to')->unsigned();
-            $table->text('text');
-            $table->timestamps();
+        Schema::table('messages', function (Blueprint $table) {
+            $table->boolean('read')->after('to')->default(false);
         });
     }
 
@@ -29,6 +25,8 @@ class CreateMessagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('messages');
+        Schema::table('messages', function (Blueprint $table) {
+            $table->dropColumn('read');
+        });
     }
 }
