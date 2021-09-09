@@ -16,6 +16,5 @@ This is a Chat system example application built with the [Laravel WebSockets](ht
 `php artisan migrate`
 6. Final step run websockets server.
 `php artisan websockets:serve`,
-
-
+<img src="https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png">
 
