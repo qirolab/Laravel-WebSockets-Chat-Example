@@ -17,7 +17,5 @@ This is a Chat system example application built with the [Laravel WebSockets](ht
 6. Final step run websockets server.
 `php artisan websockets:serve`,
 
-Now test it in your browser.
-
 
 
