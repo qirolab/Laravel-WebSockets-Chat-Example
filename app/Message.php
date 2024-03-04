@@ -11,10 +11,10 @@ class Message extends Model
      *
      * @var array
      */
-    protected $fillable = ['message'];
+    protected $guarded = [];
 
-    public function user()
+    public function fromContact()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasOne(User::class, 'id', 'from');
     }
 }
